@@ -6,8 +6,9 @@ services:
     restart: unless-stopped
 
     # Use host network mode for full internet access and TFTP/DHCP compatibility
-    network_mode: "host"
-
+    #network_mode: "host"
+    ports: "9021:9021"
+    
     # Network capabilities for DHCP validation
     cap_add:
       - NET_ADMIN
